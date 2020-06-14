@@ -389,6 +389,7 @@ str.length
 
 6、字符串的可变性，不可变
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508110738649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Bhbl9oMTk5NQ==,size_16,color_FFFFFF,t_70)
+
 7、大小写转换
 
 ```javascript
@@ -540,9 +541,24 @@ for …in-------下标
 > ES6的新特性~
 
 Map
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508163109596.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3Bhbl9oMTk5NQ==,size_16,color_FFFFFF,t_70)
+
+```javascript
+//ES6  MAP
+//学生的成绩  学生的名字
+
+var map = new Map([['tom',100],['jack',90],['haha',80]]);
+var name = map.get('tom');//通过key获得value
+map.set('admin',123456);//新增或修改
+map.delete('tom');//删除
+```
+
+
+
 Set：无序不重复的集合
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508163211654.png)
+
+
 
 ## 3.6、iterator
 
@@ -569,8 +585,18 @@ Set：无序不重复的集合
 
 > 定义方式二
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200508182120582.png)
+```javascript
+var abs = function(x){
+	if(x>=0){
+		return x;
+	}else{
+		return -x;
+	}
+}
+```
+
 function(x){…}这是一个匿名函数。但是可以吧结果赋值给abs，通过abs就可以调用函数！
+
 方式一和方式二等价！
 
 > 调用函数
@@ -815,7 +841,7 @@ document代表当前的页面，HTML DOM文档树
 获取cookie
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200509230037645.png)
 劫持cookie原理
-www.taobao.com
+<www.taobao.com>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020050923025532.png)
 服务器端可以设置cookie为httpOnly
 
@@ -1050,7 +1076,7 @@ $('.class1').click;//class选择器
 123456789101112
 ```
 
-文档工具站：http://jquery.cuishifeng.cn/
+文档工具站：<http://jquery.cuishifeng.cn/>
 
 > 事件
 
