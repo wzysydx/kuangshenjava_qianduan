@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+
+    <script>
+        function abs(x) {
+            if (typeof x!== 'number'){
+                throw 'Not a Number';//手动抛出异常
+            }
+            if(x>=0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+
+        var abs1 = function (x) {
+
+            console.log("x==>"+x);
+
+            for (var i = 0; i < arguments.length;i++){
+                console.log(arguments[i]);
+            }
+
+            if(x>=0){
+                return x;
+            }else {
+                return -x;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
